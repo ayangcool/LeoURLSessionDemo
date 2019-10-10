@@ -17,6 +17,7 @@
 		B348E488234F509E0043E1A0 /* DownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B348E481234F509E0043E1A0 /* DownloadVC.m */; };
 		B348E489234F509E0043E1A0 /* UploadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B348E483234F509E0043E1A0 /* UploadVC.m */; };
 		B348E48A234F509E0043E1A0 /* GetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B348E484234F509E0043E1A0 /* GetVC.m */; };
+		B348E48D234F59AC0043E1A0 /* HttpsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B348E48C234F59AC0043E1A0 /* HttpsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		B348E484234F509E0043E1A0 /* GetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVC.m; sourceTree = "<group>"; };
 		B348E485234F509E0043E1A0 /* GetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVC.h; sourceTree = "<group>"; };
 		B348E486234F509E0043E1A0 /* UploadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadVC.h; sourceTree = "<group>"; };
+		B348E48B234F59AC0043E1A0 /* HttpsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpsVC.h; sourceTree = "<group>"; };
+		B348E48C234F59AC0043E1A0 /* HttpsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +77,16 @@
 				B348E467234F50820043E1A0 /* AppDelegate.m */,
 				B348E46C234F50820043E1A0 /* ViewController.h */,
 				B348E46D234F50820043E1A0 /* ViewController.m */,
-				B348E482234F509E0043E1A0 /* DownloadVC.h */,
-				B348E481234F509E0043E1A0 /* DownloadVC.m */,
 				B348E485234F509E0043E1A0 /* GetVC.h */,
 				B348E484234F509E0043E1A0 /* GetVC.m */,
 				B348E47F234F509E0043E1A0 /* PostVC.h */,
 				B348E480234F509E0043E1A0 /* PostVC.m */,
+				B348E482234F509E0043E1A0 /* DownloadVC.h */,
+				B348E481234F509E0043E1A0 /* DownloadVC.m */,
 				B348E486234F509E0043E1A0 /* UploadVC.h */,
 				B348E483234F509E0043E1A0 /* UploadVC.m */,
+				B348E48B234F59AC0043E1A0 /* HttpsVC.h */,
+				B348E48C234F59AC0043E1A0 /* HttpsVC.m */,
 				B348E46F234F50820043E1A0 /* Main.storyboard */,
 				B348E472234F50830043E1A0 /* Assets.xcassets */,
 				B348E474234F50830043E1A0 /* LaunchScreen.storyboard */,
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B348E48D234F59AC0043E1A0 /* HttpsVC.m in Sources */,
 				B348E489234F509E0043E1A0 /* UploadVC.m in Sources */,
 				B348E46E234F50820043E1A0 /* ViewController.m in Sources */,
 				B348E468234F50820043E1A0 /* AppDelegate.m in Sources */,
@@ -308,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U8R4BK23U2;
+				DEVELOPMENT_TEAM = BXPW88Q5UB;
 				INFOPLIST_FILE = LeoURLSessionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U8R4BK23U2;
+				DEVELOPMENT_TEAM = BXPW88Q5UB;
 				INFOPLIST_FILE = LeoURLSessionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

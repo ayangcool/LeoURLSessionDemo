@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    NSArray *vcArr = @[@"GetVC", @"PostVC", @"DownloadVC", @"UploadVC"];
+    NSArray *vcArr = @[@"GetVC", @"PostVC", @"DownloadVC", @"UploadVC", @"HttpsVC"];
     self.vcArr = [NSMutableArray arrayWithArray:vcArr];
     CGFloat width = 150;
     CGFloat height = 40;

@@ -44,7 +44,7 @@
 - (void)get1 {
     NSURL *url = [NSURL URLWithString:@"http://192.168.6.150/testGet.png"];
     NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             if (data) {
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -75,7 +75,7 @@
     // 告诉服务器我的设备
     config.HTTPAdditionalHeaders = @{@"User-Agent": @"iPhone"};
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
-    NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             if (data) {
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -102,7 +102,7 @@
     config.HTTPAdditionalHeaders = @{@"User-Agent": @"iPhone"};
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[[NSOperationQueue alloc] init]];
-    NSURLSessionTask *task = [session dataTaskWithURL:url];
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url];
     [task resume];
 }
 
